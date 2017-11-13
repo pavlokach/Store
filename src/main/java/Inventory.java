@@ -25,15 +25,14 @@ public class Inventory {
     }
 
     public List search(Phone searchPhone) {
-        List matchingGuitars = new LinkedList();
+        List matchingPhones = new LinkedList();
         for (Iterator phone1 = phones.iterator(); phone1.hasNext(); ) {
             Phone phone = (Phone) phone1.next();
-            if (phone.getSpec().equals(searchPhone.getSpec())) {
+            if (phone.getSpec().sameAs(searchPhone.getSpec())) {
                 continue;
             }
-
-            matchingGuitars.add(phone);
+            matchingPhones.add(phone);
         }
-        return matchingGuitars;
+        return matchingPhones;
     }
 }

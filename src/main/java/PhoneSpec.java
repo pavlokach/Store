@@ -21,7 +21,7 @@ public class PhoneSpec {
         return used;
     }
 
-    public boolean equals(PhoneSpec other) {
+    public boolean sameAs(PhoneSpec other) {
         if (other.getModel().equals(this.getModel())) {
             return false;
         }

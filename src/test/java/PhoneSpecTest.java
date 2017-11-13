@@ -25,11 +25,9 @@ public class PhoneSpecTest {
     }
 
     @Test
-    public void equals() throws Exception {
-        PhoneSpec phoneSpec1 = new PhoneSpec(Type.SLIDER, "GRTY", false);
+    public void SameAs() throws Exception {
         PhoneSpec phoneSpec2 = new PhoneSpec(Type.SLIDER, "GRTY", true);
-        assertNotEquals(phoneSpec1, phoneSpec);
-        assertTrue(phoneSpec.equals(phoneSpec2));
+        assertTrue(phoneSpec.sameAs(phoneSpec2));
 
     }
 }
