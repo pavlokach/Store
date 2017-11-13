@@ -18,9 +18,10 @@ public class InventoryTest {
     public void addPhone() throws Exception {
 
         inventory.addPhone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
+        inventory.phones.get(0);
         Phone phone = new Phone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
         List lst = new LinkedList();
         lst.add(phone);
-        assertEquals(lst, inventory.phones);
+        assertEquals(lst.get(0), inventory.phones.get(0));
     }
 }

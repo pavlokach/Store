@@ -22,13 +22,15 @@ public class PhoneSpec {
     }
 
     public boolean equals(PhoneSpec other) {
-
-        if (other.getModel().equals(this.getModel()))
+        if (other.getModel().equals(this.getModel())) {
             return false;
-        if (other.isUsed().equals(this.isUsed()))
+        }
+        if (other.isUsed().equals(this.isUsed())) {
             return false;
-        if (other.getType().equals(this.getType()))
+        }
+        if (other.getType().equals(this.getType())) {
             return false;
+        }
         return true;
     }
 }

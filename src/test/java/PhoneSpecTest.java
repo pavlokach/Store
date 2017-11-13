@@ -29,6 +29,7 @@ public class PhoneSpecTest {
         PhoneSpec phoneSpec1 = new PhoneSpec(Type.SLIDER, "GRTY", false);
         PhoneSpec phoneSpec2 = new PhoneSpec(Type.SLIDER, "GRTY", true);
         assertNotEquals(phoneSpec1, phoneSpec);
-        assertEquals(phoneSpec, phoneSpec2);
+        assertTrue(phoneSpec.equals(phoneSpec2));
+
     }
 }

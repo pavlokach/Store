@@ -28,8 +28,10 @@ public class Inventory {
         List matchingGuitars = new LinkedList();
         for (Iterator phone1 = phones.iterator(); phone1.hasNext(); ) {
             Phone phone = (Phone) phone1.next();
-            if (phone.getSpec().equals(searchPhone.getSpec()))
+            if (phone.getSpec().equals(searchPhone.getSpec())) {
                 continue;
+            }
+
             matchingGuitars.add(phone);
         }
         return matchingGuitars;
