@@ -23,7 +23,7 @@ public class InventoryTest {
         phone = new Phone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
         List lst = new LinkedList();
         lst.add(phone);
-        assertEquals(lst.get(0), inventory.phones.get(0));
+        assertTrue(lst.equals(inventory.phones));
     }
 
     @Test
