@@ -9,18 +9,15 @@ import static org.junit.Assert.*;
 
 public class InventoryTest {
     Inventory inventory;
-    Phone phone;
+    Phone phone = new Phone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
 
     public InventoryTest() {
         this.inventory = new Inventory();
+        inventory.addPhone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
     }
 
     @Test
     public void addPhone() throws Exception {
-
-        inventory.addPhone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
-        inventory.phones.get(0);
-        phone = new Phone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
         List lst = new LinkedList();
         lst.add(phone);
         assertTrue(lst.equals(inventory.phones));
@@ -34,6 +31,8 @@ public class InventoryTest {
     public void search() throws Exception {
         List lst = new LinkedList();
         lst.add(phone);
-        assertTrue(inventory.search(phone).equals(lst));
+        List lst1 = inventory.search(phone);
+        assertEquals(lst, lst1);
+        
     }
 }
