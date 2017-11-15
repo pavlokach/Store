@@ -1,7 +1,7 @@
 class PhoneSpec {
+    private boolean used;
     private Type type;
     private String model;
-    Boolean used;
 
     PhoneSpec(Type type, String model, Boolean used) {
         this.type = type;
@@ -17,11 +17,12 @@ class PhoneSpec {
         return model;
     }
 
-    Boolean isUsed() {
+    boolean isUsed() {
         return used;
     }
 
     boolean sameAs(PhoneSpec other) {
-        return other.getModel().equals(this.getModel()) && other.isUsed().equals(this.isUsed()) && other.getType().equals(this.getType());
+        return other.getModel().equals(this.getModel()) && other.isUsed() == this.isUsed()
+                && other.getType().equals(this.getType());
     }
 }

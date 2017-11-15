@@ -1,17 +1,17 @@
 class Phone {
+    private float price;
+    private PhoneSpec spec;
     private String serialNumber;
-    float price;
-    PhoneSpec spec;
 
-
-    Phone(String model, String serialNumber, Type type, float price, boolean used) {
+    Phone(String model, String serialNumber, Type type,
+          float price, boolean used) {
         this.spec = new PhoneSpec(type, model, used);
         this.serialNumber = serialNumber;
         this.price = price;
     }
 
-    void setPrice(float price) {
-        this.price = price;
+    void setPrice(float inputPrice) {
+        this.price = inputPrice;
     }
 
     PhoneSpec getSpec() {
