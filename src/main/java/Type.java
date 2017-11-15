@@ -1,7 +1,6 @@
 public enum Type {
     SLIDER, BAR, FLIP, SMARTPHONE;
 
-
     public String getString() {
         switch (this) {
             case BAR:

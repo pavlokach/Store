@@ -1,36 +1,27 @@
-public class PhoneSpec {
-    Type type;
-    String model;
+class PhoneSpec {
+    private Type type;
+    private String model;
     Boolean used;
 
-    public PhoneSpec(Type type, String model, Boolean used) {
+    PhoneSpec(Type type, String model, Boolean used) {
         this.type = type;
         this.model = model;
         this.used = used;
     }
 
-    public Type getType() {
+    Type getType() {
         return type;
     }
 
-    public String getModel() {
+    String getModel() {
         return model;
     }
 
-    public Boolean isUsed() {
+    Boolean isUsed() {
         return used;
     }
 
-    public boolean sameAs(PhoneSpec other) {
-        if (!other.getModel().equals(this.getModel())) {
-            return false;
-        }
-        if (!other.isUsed().equals(this.isUsed())) {
-            return false;
-        }
-        if (!other.getType().equals(this.getType())) {
-            return false;
-        }
-        return true;
+    boolean sameAs(PhoneSpec other) {
+        return other.getModel().equals(this.getModel()) && other.isUsed().equals(this.isUsed()) && other.getType().equals(this.getType());
     }
 }

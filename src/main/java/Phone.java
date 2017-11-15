@@ -1,32 +1,28 @@
-public class Phone {
-    String serialNumber;
+class Phone {
+    private String serialNumber;
     float price;
     PhoneSpec spec;
 
 
-    public Phone(String model, String serialNumber, Type type, float price, boolean used) {
+    Phone(String model, String serialNumber, Type type, float price, boolean used) {
         this.spec = new PhoneSpec(type, model, used);
         this.serialNumber = serialNumber;
         this.price = price;
-
     }
 
-
-    public void setPrice(float price) {
+    void setPrice(float price) {
         this.price = price;
     }
 
-    public PhoneSpec getSpec() {
+    PhoneSpec getSpec() {
         return spec;
     }
 
-    public String getSerialNumber() {
+    String getSerialNumber() {
         return serialNumber;
     }
 
-    public float getPrice() {
+    float getPrice() {
         return price;
     }
-
-
 }

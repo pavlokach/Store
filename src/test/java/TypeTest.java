@@ -14,5 +14,4 @@ public class TypeTest {
         testObject = Type.SMARTPHONE;
         assertEquals(testObject.getString(), Type.SMARTPHONE.getString());
     }
-
 }

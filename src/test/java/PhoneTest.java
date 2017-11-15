@@ -1,11 +1,9 @@
-
-
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class PhoneTest {
-    Phone phone;
+    private Phone phone;
 
     public PhoneTest() {
         this.phone = new Phone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
@@ -31,6 +29,4 @@ public class PhoneTest {
     public void getSerialNumber() throws Exception {
         assertEquals("2568952", phone.getSerialNumber());
     }
-
-
 }

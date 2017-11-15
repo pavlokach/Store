@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PhoneSpecTest {
-    PhoneSpec phoneSpec;
+    private PhoneSpec phoneSpec;
 
     public PhoneSpecTest() {
         this.phoneSpec = new PhoneSpec(Type.SLIDER, "GRTY", true);
@@ -28,6 +28,5 @@ public class PhoneSpecTest {
     public void sameAs() throws Exception {
         PhoneSpec phoneSpec2 = new PhoneSpec(Type.SLIDER, "GRTY", true);
         assertTrue(phoneSpec.sameAs(phoneSpec2));
-
     }
 }
