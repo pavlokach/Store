@@ -22,7 +22,8 @@ class PhoneSpec {
     }
 
     boolean sameAs(PhoneSpec other) {
-        return other.getModel().equals(this.getModel()) && other.isUsed() == this.isUsed()
+        return other.getModel().equals(this.getModel())
+                && other.isUsed() == this.isUsed()
                 && other.getType().equals(this.getType());
     }
 }
