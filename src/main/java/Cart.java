@@ -3,8 +3,8 @@ import java.util.List;
 
 public class Cart {
     private List<Phone> phones = new ArrayList<>();
-    PaymentStrategy paymentStrategy = new CashPayment();
-    DeliveryStrategy deliveryStrategy = new DeliveryNovaPoshta();
+    private PaymentStrategy paymentStrategy = new CashPayment();
+    private DeliveryStrategy deliveryStrategy = new DeliveryNovaPoshta();
 
     public boolean ship() {
         System.out.println(phones);
@@ -15,8 +15,8 @@ public class Cart {
         return phones;
     }
 
-    public void setPhones(List<Phone> phones) {
-        this.phones = phones;
+    public void setPhones(List<Phone> inputPhones) {
+        this.phones = inputPhones;
     }
 
     public double computeTotalPrice() {

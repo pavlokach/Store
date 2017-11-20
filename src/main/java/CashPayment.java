@@ -1,4 +1,4 @@
-public class CashPayment implements PaymentStrategy{
+public class CashPayment implements PaymentStrategy {
 
     @Override
     public boolean pay(double price) {

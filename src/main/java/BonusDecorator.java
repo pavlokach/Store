@@ -9,7 +9,7 @@ public class BonusDecorator extends CardDecorator {
         Phone bonusPhone = new Phone("mhyt", "56374TY", Type.BAR, 5f, true);
         List<Phone> tempPhones = getPhones();
         tempPhones.add(bonusPhone);
-        decoratedCart.setPhones(tempPhones);
-        return decoratedCart.ship();
+        getDecoratedCart().setPhones(tempPhones);
+        return getDecoratedCart().ship();
     }
 }
