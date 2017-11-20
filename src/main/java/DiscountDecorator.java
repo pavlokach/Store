@@ -1,6 +1,8 @@
 import java.util.List;
 
 public class DiscountDecorator extends CardDecorator {
+    final double discount = 0.9d;
+
     public DiscountDecorator(Cart cart) {
         super(cart);
     }
@@ -12,6 +14,6 @@ public class DiscountDecorator extends CardDecorator {
                 ) {
             price += checkPhone.getPrice();
         }
-        return price * 0.9;
+        return price * discount;
     }
 }

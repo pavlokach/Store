@@ -1,15 +1,18 @@
 import java.util.List;
 
 public class BonusDecorator extends CardDecorator {
+    final float pr = 5f;
+
     public BonusDecorator(Cart cart) {
         super(cart);
     }
 
     public boolean ship() {
-        Phone bonusPhone = new Phone("mhyt", "56374TY", Type.BAR, 5f, true);
+
+        Phone bonusPhone = new Phone("mhyt", "56374TY", Type.BAR, pr, true);
         List<Phone> tempPhones = getPhones();
         tempPhones.add(bonusPhone);
-        decoratedCart.setPhones(tempPhones);
-        return decoratedCart.ship();
+        getDecoratedCart().setPhones(tempPhones);
+        return getDecoratedCart().ship();
     }
 }

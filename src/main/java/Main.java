@@ -6,7 +6,7 @@ public class Main {
 //        Phone bonusPhone1 = new Phone("mryt", "56374TY", Type.BAR, 10f, true);
 //        cardSample.addPhone(bonusPhone);
 //        cardSample.addPhone(bonusPhone1);
-//  
+//
 //        System.out.println(cardSample.computeTotalPrice());
 //        System.out.println(cardSample.ship());
 //
