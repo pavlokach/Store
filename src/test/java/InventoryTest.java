@@ -11,8 +11,8 @@ public class InventoryTest {
     @Before
     public void setUp() throws Exception {
         inventory = new Inventory();
-        phone = new Phone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
-        inventory.addPhone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
+        phone = new Phone("GRTH", "2568952", Type.SLIDER,  25.5, false);
+        inventory.addPhone("GRTH", "2568952", Type.SLIDER, 25.5, false);
     }
 
     @After

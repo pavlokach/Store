@@ -6,18 +6,18 @@ public class PhoneTest {
     private Phone phone;
 
     public PhoneTest() {
-        this.phone = new Phone("GRTH", "2568952", Type.SLIDER, (float) 25.5, false);
+        this.phone = new Phone("GRTH", "2568952", Type.SLIDER, 25.5, false);
     }
 
     @Test
     public void getPrice() throws Exception {
-        assertEquals((float) 25.5, phone.getPrice(), 0.1);
+        assertEquals(25.5, phone.getPrice(), 0.1);
     }
 
     @Test
     public void setPrice() throws Exception {
-        phone.setPrice((float) 35.5);
-        assertEquals((float) 35.5, phone.getPrice(), 0.1);
+        phone.setPrice(35.5);
+        assertEquals(35.5, phone.getPrice(), 0.1);
     }
 
     @Test
