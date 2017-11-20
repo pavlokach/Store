@@ -1,5 +1,5 @@
 class Phone {
-    private float price;
+    private double price;
     private PhoneSpec spec;
     private String serialNumber;
 
@@ -10,7 +10,7 @@ class Phone {
         this.price = price;
     }
 
-    void setPrice(float inputPrice) {
+    void setPrice(double inputPrice) {
         this.price = inputPrice;
     }
 
@@ -22,7 +22,7 @@ class Phone {
         return serialNumber;
     }
 
-    float getPrice() {
+    double getPrice() {
         return price;
     }
 }

@@ -21,7 +21,7 @@ public class PhoneSpecTest {
 
     @Test
     public void isUsed() throws Exception {
-        assertEquals(true, phoneSpec.used);
+        assertEquals(true, phoneSpec.isUsed());
     }
 
     @Test

@@ -17,12 +17,12 @@ public class PhoneTest {
     @Test
     public void setPrice() throws Exception {
         phone.setPrice((float) 35.5);
-        assertEquals((float) 35.5, phone.price, 0.1);
+        assertEquals((float) 35.5, phone.getPrice(), 0.1);
     }
 
     @Test
     public void getSpec() throws Exception {
-        assertEquals(phone.spec, phone.getSpec());
+        assertEquals(phone.getSpec(), phone.getSpec());
     }
 
     @Test
