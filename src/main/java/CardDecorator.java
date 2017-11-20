@@ -1,8 +1,12 @@
 abstract class CardDecorator extends Cart {
     private Cart decoratedCart;
 
-    public void setDecoratedCart(Cart decoratedCart) {
+    public CardDecorator(Cart decoratedCart) {
         this.decoratedCart = decoratedCart;
+    }
+
+    public void setDecoratedCart(Cart inputCart) {
+        this.decoratedCart = inputCart;
     }
 
     public Cart getDecoratedCart() {
@@ -10,7 +14,5 @@ abstract class CardDecorator extends Cart {
         return decoratedCart;
     }
 
-    public CardDecorator(Cart decoratedCart) {
-        this.decoratedCart = decoratedCart;
-    }
+
 }
