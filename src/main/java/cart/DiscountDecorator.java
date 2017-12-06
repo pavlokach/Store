@@ -5,7 +5,7 @@ import inventory.Phone;
 import java.util.List;
 
 public class DiscountDecorator extends CartDecorator {
-    private static final double discount = 0.9d;
+    private static final double DISCOUNT = 0.9d;
 
     public DiscountDecorator(Cart cart) {
         super(cart);
@@ -19,6 +19,6 @@ public class DiscountDecorator extends CartDecorator {
                 ) {
             price += checkPhone.getPrice();
         }
-        return price * discount;
+        return price * DISCOUNT;
     }
 }

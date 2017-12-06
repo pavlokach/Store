@@ -34,8 +34,10 @@ public class PhoneSpec {
         return "PhoneSpec{"
                 + "used="
                 + used
-                +              ", type=" + type +
-                ", model='" + model + '\'' +
-                '}';
+                + ", type="
+                + type
+                + ", model='"
+                + model + '\''
+                + '}';
     }
 }
