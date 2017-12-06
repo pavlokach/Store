@@ -1,6 +1,7 @@
 package cart;
 
-import inventory.*;
+
+import inventory.Phone;
 
 import java.util.ArrayList;
 import java.util.List;

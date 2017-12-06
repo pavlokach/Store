@@ -5,7 +5,7 @@ import inventory.Phone;
 import java.util.List;
 
 public class DiscountDecorator extends CartDecorator {
-    private final double discount = 0.9d;
+    private static final double discount = 0.9d;
 
     public DiscountDecorator(Cart cart) {
         super(cart);

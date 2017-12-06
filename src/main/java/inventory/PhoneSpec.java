@@ -31,9 +31,10 @@ public class PhoneSpec {
 
     @Override
     public String toString() {
-        return "PhoneSpec{" +
-                "used=" + used +
-                ", type=" + type +
+        return "PhoneSpec{"
+                + "used="
+                + used
+                +              ", type=" + type +
                 ", model='" + model + '\'' +
                 '}';
     }

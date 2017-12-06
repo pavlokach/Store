@@ -1,7 +1,5 @@
 package inventory;
 
-import inventory.PhoneSpec;
-
 public class Phone {
     private double price;
     private PhoneSpec spec;
@@ -32,10 +30,14 @@ public class Phone {
 
     @Override
     public String toString() {
-        return "Phone{" +
-                "price=" + price +
-                ", spec=" + spec +
-                ", serialNumber='" + serialNumber + '\'' +
-                '}';
+        return "Phone{"
+                + "price="
+                + price
+                + ", spec="
+                + spec
+                + ", serialNumber='"
+                + serialNumber
+                + '\''
+                + '}';
     }
 }
