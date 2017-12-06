@@ -1,3 +1,6 @@
+import inventory.Inventory;
+import inventory.Phone;
+import inventory.Type;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

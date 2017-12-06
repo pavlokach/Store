@@ -1,3 +1,5 @@
+import inventory.PhoneSpec;
+import inventory.Type;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
