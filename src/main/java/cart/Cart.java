@@ -4,6 +4,7 @@ package cart;
 import inventory.Phone;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Observable;
 
@@ -14,7 +15,6 @@ public class Cart extends Observable {
 
 
     public boolean ship() {
-        System.out.println(phones);
         return deliveryStrategy.deliver(phones);
     }
 
@@ -28,9 +28,8 @@ public class Cart extends Observable {
 
     public double computeTotalPrice() {
         double price = (double) 0;
-        for (Phone checkPhone : phones
-                ) {
-            price += checkPhone.getPrice();
+        for (Phone phone : getPhones()) {
+            price += phone.getPrice();
         }
         return price;
     }

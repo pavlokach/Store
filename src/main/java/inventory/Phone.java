@@ -6,7 +6,7 @@ public class Phone {
     private String serialNumber;
 
     public Phone(String model, String serialNumber, Type type,
-                 float price, boolean used) {
+                 double price, boolean used) {
         this.spec = new PhoneSpec(type, model, used);
         this.serialNumber = serialNumber;
         this.price = price;

@@ -7,12 +7,15 @@ import inventory.Type;
 import java.util.List;
 
 public class BonusDecorator extends CartDecorator {
-    private static final float PRICE = 0f;
+    private static final double PRICE = 0d;
 
     public BonusDecorator(Cart cart) {
         super(cart);
     }
 
+    public static double getPRICE() {
+        return PRICE;
+    }
 
     @Override
     public boolean ship() {

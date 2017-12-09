@@ -7,12 +7,8 @@ import java.util.List;
 abstract class CartDecorator extends Cart {
     private Cart decoratedCart;
 
-    public CartDecorator(Cart decoratedCart) {
-        this.decoratedCart = decoratedCart;
-    }
-
-    public void setDecoratedCart(Cart inputCart) {
-        this.decoratedCart = inputCart;
+    public CartDecorator(Cart inputDecoratedCart) {
+        this.decoratedCart = inputDecoratedCart;
     }
 
 
@@ -25,10 +21,6 @@ abstract class CartDecorator extends Cart {
         getDecoratedCart().setPhones(inputPhones);
     }
 
-    @Override
-    public double computeTotalPrice() {
-        return getDecoratedCart().computeTotalPrice();
-    }
 
     @Override
     public void addPhone(Phone inputPhone) {

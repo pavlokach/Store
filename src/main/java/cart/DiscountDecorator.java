@@ -1,8 +1,5 @@
 package cart;
 
-import inventory.Phone;
-
-import java.util.List;
 
 public class DiscountDecorator extends CartDecorator {
     private static final double DISCOUNT = 0.9d;
@@ -11,14 +8,13 @@ public class DiscountDecorator extends CartDecorator {
         super(cart);
     }
 
+    public static double getDISCOUNT() {
+        return DISCOUNT;
+    }
+
     @Override
     public double computeTotalPrice() {
-        double price = (double) 0;
-        List<Phone> phones = this.getPhones();
-        for (Phone checkPhone : phones
-                ) {
-            price += checkPhone.getPrice();
-        }
-        return price * DISCOUNT;
+        double price = super.computeTotalPrice();
+        return price * getDISCOUNT();
     }
 }
